@@ -13,9 +13,15 @@ Note: if there is nothing to sum, the sum is default to 0.
 public class Positive{
 
   public static int sum(int[] arr){
-    return 0;
-  }
+    int total = 0;
 
+    for (int i = 0; i < arr.length; i++) {
+      if (arr[i] > 0)
+        total += arr[i];
+    }
+
+    return total;
+  }
 }
 
 ///// TESTING /////

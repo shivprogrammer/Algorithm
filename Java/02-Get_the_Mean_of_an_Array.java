@@ -12,6 +12,19 @@ The array will never be empty.
 
 ///// TESTING /////
 
+public class School {
+
+  public static int getAverage(int[] marks) {
+    int total = 0;
+    int count = 0;
+    for (int number : marks) {
+      total += marks[number];
+      count++;
+    }
+    return total / count;
+  }
+}
+
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 import org.junit.runners.JUnit4;

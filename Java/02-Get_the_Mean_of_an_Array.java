@@ -17,8 +17,8 @@ public class School {
   public static int getAverage(int[] marks) {
     int total = 0;
     int count = 0;
-    for (int number : marks) {
-      total += marks[number];
+    for (int i = 0; i < marks.length; i++) {
+      total += marks[i];
       count++;
     }
     double realMean = total / count;

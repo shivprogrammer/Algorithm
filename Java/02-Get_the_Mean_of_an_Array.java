@@ -21,7 +21,9 @@ public class School {
       total += marks[number];
       count++;
     }
-    return total / count;
+    double realMean = total / count;
+    int outputMean = (int)realMean;
+    return outputMean;
   }
 }
 

@@ -20,20 +20,17 @@ rowSumOddNumbers(2); // 3 + 5 = 8
 */
 
 class RowSumOddNumbers {
+
     public static int rowSumOddNumbers(int n) {
       int countDown = n;
-      int startingPoint = 0;
-      int total = 0;
+      int total = 1;
 
-      while (countDown > 0) {
-        if (countDown == n) {
-          startingPoint += 1;
-          countDown--;
-        }
-        else {
-          
-        }
+      while (countDown > 1) {
+        total += 2 * (n - 1);
+        coundDown--;
       }
+
+      return total;
     }
 }
 

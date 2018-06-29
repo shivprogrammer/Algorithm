@@ -16,3 +16,23 @@ Calculate the row sums of this triangle from the row index (starting at index 1)
 rowSumOddNumbers(1); // 1
 rowSumOddNumbers(2); // 3 + 5 = 8
 */
+
+class RowSumOddNumbers {
+    public static int rowSumOddNumbers(int n) {
+
+    }
+}
+
+///// TESTING //////
+
+import static org.junit.Assert.*;
+import org.junit.Test;
+
+public class RowSumOddNumbersTest {
+
+    @Test
+    public void test1() {
+        assertEquals(1, RowSumOddNumbers.rowSumOddNumbers(1));
+        assertEquals(74088, RowSumOddNumbers.rowSumOddNumbers(42));
+    }
+}

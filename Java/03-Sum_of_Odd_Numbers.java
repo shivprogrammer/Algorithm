@@ -23,14 +23,14 @@ class RowSumOddNumbers {
 
     public static int rowSumOddNumbers(int n) {
       int countDown = n;
-      int total = 1;
+      int startingPoint = 1;
 
       while (countDown > 1) {
-        total += 2 * (n - 1);
-        coundDown--;
+        startingPoint += 2 * (countDown - 1);
+        countDown--;
       }
 
-      return total;
+      return startingPoint;
     }
 }
 

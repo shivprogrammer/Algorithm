@@ -30,6 +30,9 @@ class RowSumOddNumbers {
         countDown--;
       }
 
+      countDown = n;
+      
+
       return startingPoint;
     }
 }

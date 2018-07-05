@@ -1,5 +1,10 @@
 package netbeans_algorithms;
 
+/*
+1st Algorithm
+Abbreviate a Two Word Name
+8kyu
+*/
 public class AbbreviateTwoWords {
 
     public static String abbrevName(String name) {
@@ -13,3 +18,6 @@ public class AbbreviateTwoWords {
         return output;
     }
 }
+
+// O(N) Time Complexity
+// O(1) Space Complexity

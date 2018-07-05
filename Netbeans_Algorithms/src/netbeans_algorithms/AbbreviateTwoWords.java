@@ -5,6 +5,7 @@ package netbeans_algorithms;
 Abbreviate a Two Word Name
 8kyu
 */
+
 public class AbbreviateTwoWords {
 
     public static String abbrevName(String name) {

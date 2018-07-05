@@ -13,4 +13,11 @@ public class AbbreviateTwoWordsTest {
         assertEquals(AbbreviateTwoWords.abbrevName("P Favuzzi"), "P.F");
         assertEquals(AbbreviateTwoWords.abbrevName("David Mendieta"), "D.M");
     }
+        
+    @Test
+        public void testRandom() {
+            assertEquals(AbbreviateTwoWords.abbrevName("king kong"), "K.K");
+            assertEquals(AbbreviateTwoWords.abbrevName("storm Trooper"), "S.T");
+            assertEquals(AbbreviateTwoWords.abbrevName("Happy feet"), "H.F");            
+        }
 }

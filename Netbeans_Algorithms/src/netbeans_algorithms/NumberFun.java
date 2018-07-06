@@ -13,5 +13,7 @@ If the parameter is itself not a perfect square, than -1 should be returned. You
 */
 
 public class NumberFun {
-    
+    public static long findNextSquare(long sq) {
+        return 0; 
+    }
 }

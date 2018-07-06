@@ -16,7 +16,8 @@ public class NumberFun {
     public static long findNextSquare(long sq) {
         if (Math.sqrt(sq) == Math.floor(Math.sqrt(sq))) {
             double baseNumber = Math.sqrt(sq);
-            return (long)Math.pow(baseNumber + 1, 2);
+            long nextPerfectSquare = (long)Math.pow(baseNumber + 1, 2);
+            return nextPerfectSquare;
         }
         return -1;
     }

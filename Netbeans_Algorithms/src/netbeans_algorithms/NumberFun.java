@@ -14,6 +14,9 @@ If the parameter is itself not a perfect square, than -1 should be returned. You
 
 public class NumberFun {
     public static long findNextSquare(long sq) {
-        return 0; 
+        if (Math.sqrt(sq) == Math.floor(Math.sqrt(sq))) {
+            return Math.pow((long)Math.sqrt(sq) + 1, 2);
+        }
+        return -1;
     }
 }

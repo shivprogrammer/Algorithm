@@ -49,64 +49,18 @@ public abstract class Card {
     public void markAvailable() { available = true; }
 }
 
-///// RANDOM CODE BRAINSTORMING //////
-
-//public class DeckOfCards {
-//    public Deck {
-//        // new Deck = Card[][];
-//        // Max card count 52
-//         this.CardCount = 0;
-//    }
-//    
-//    public boolean isThereCardDuplicate(Deck deck, Card newCard) {
-//        // There should be some sort of hash table ensure that a card of a particular suit and value is not repeated
-//    }
-//    
-//    public boolean isDeckFull(Deck deck) {
-////        if(Deck.CardCount > 52)
-////            return false;
-////        else
-////            return true;
-//       
-//    }
-//}
-//
-////////// DIFFERENT CARD CLASS ////////
-//
-//public class Card {
-//    public Card(CardSuit suit, CardValue value) {
-//        // if card is in Deck, you need to do a count++ to the over all number of Cards within the Deck
-//    }
-//    
-//    public enum CardSuit {
-//        Clubs, //
-//        Spades,
-//        Hearts,
-//        Diamonds
-//    }
-//    
-//    public enum CardValue {
-//        Two,
-//        Three,
-//        Four,
-//        Five,
-//        Six,
-//        Seven,
-//        Eight,
-//        Nine,
-//        Ten,
-//        Jack,
-//        Queen,
-//        King,
-//        Ace
-//    }
-//    
-//    public static class isRed(Suit suit) {
-        // if (Card.CardSuit == Hearts || Card.CardSuit == Diamonds) {
-//        return true;
-//        else 
-//        return false;
-//    }
+public class Hand <T extends Card> {
+    protected ArrayList<T> cards = new ArrayList<T>();
+    
+    public int score() {
+        int score = 0;
+        for (T card: cards) {
+            score += card.value();
+        }
+        return score;
+    }
+    
+    public void addCard(T card) {
+        cards.add(card);
+    }
 }
-
-///// BLACKJACK GAME BELOW /////

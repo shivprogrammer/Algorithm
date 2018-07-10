@@ -12,7 +12,7 @@ public class DeckOfCards {
     public Deck {
         // new Deck = Card[][];
         // Max card count 52
-        // this.count = 0;
+         this.CardCount = 0;
     }
     
     public boolean isThereCardDuplicate(Deck deck, Card newCard) {
@@ -20,7 +20,11 @@ public class DeckOfCards {
     }
     
     public boolean isDeckFull(Deck deck) {
-        
+//        if(Deck.CardCount > 52)
+//            return false;
+//        else
+//            return true;
+       
     }
 }
 
@@ -55,8 +59,11 @@ public class Card {
     }
     
     public static class isRed(Suit suit) {
-        // if 
-    }
+        // if (Card.CardSuit == Hearts || Card.CardSuit == Diamonds) {
+//        return true;
+//        else 
+//        return false;
+//    }
 }
 
 ///// BLACKJACK GAME BELOW /////

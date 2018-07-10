@@ -11,8 +11,16 @@ Design the Data Structures for a generic deck of cards. Explain how you would su
 public class DeckOfCards {
     public Deck {
         // new Deck = Card[][];
-        // There should be some sort of hash table ensure that a card of a particular suit and value is not repeated
         // Max card count 52
+        // this.count = 0;
+    }
+    
+    public boolean isThereCardDuplicate(Deck deck, Card newCard) {
+        // There should be some sort of hash table ensure that a card of a particular suit and value is not repeated
+    }
+    
+    public boolean isDeckFull(Deck deck) {
+        
     }
 }
 

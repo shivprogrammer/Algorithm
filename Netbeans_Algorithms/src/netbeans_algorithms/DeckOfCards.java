@@ -17,6 +17,17 @@ public enum Suit {
 }
 
 public class Deck <T extends Card> {
+    private ArrayList<T> cards;
+    private int dealtIndex = 0; // this is confusing
+    
+    public void setDeckOfCards(ArrayList<T> deckOfCards) { ... }
+    
+    public void shuffle() { ... }
+    public int remainingCards() {
+        return cards.size() - dealtIndex; // this is confusing
+    }
+    public T[] dealHand(int number) { ... } // T[] stands for Card Array
+    public T dealCard() { ... }
 }
 
 //public class DeckOfCards {
